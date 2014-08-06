@@ -3945,11 +3945,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
     margin: 0;
+    margin-left: 17%;
   }
   .navbar-nav > li {
     float: left;
+    margin-left: 2%;
+    margin-right: 2%;
   }
   .navbar-nav > li > a {
     padding-top: 14.5px;
@@ -5174,6 +5176,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-default {
   border-color: #dddddd;
+  margin-top: 1%;
 }
 .panel-default > .panel-heading {
   color: #333333;
@@ -6323,4 +6326,7 @@ table .info a,
 .grow:hover, .grow:focus, .grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+.map {
+  float:right;
 }

@@ -18,10 +18,10 @@ if(basename($_SERVER['PHP_SELF'])=="home.php"){
 ?>
 
 <?php 
-if(basename($_SERVER['PHP_SELF'])=="history.php"){
-    print '<li class="active"><a href="#">History</a></li>';
+if(basename($_SERVER['PHP_SELF'])=="travel.php"){
+    print '<li class="active"><a href="#">Travel &amp; Accomodations</a></li>';
 } else {
-    print '<li class="grow"><a href="history.php">History</a></li>';
+    print '<li class="grow"><a href="travel.php">Travel &amp; Accomodations</a></li>';
 } 
 ?>
 
@@ -39,39 +39,7 @@ if(basename($_SERVER['PHP_SELF'])=="program.php"){
 } else {
     print '<li class="grow"><a href="program.php">Program</a></li>';
 } 
-?>  
-
-<?php 
-if(basename($_SERVER['PHP_SELF'])=="locations.php"){
-    print '<li class="active"><a href="#">Locations</a></li>';
-} else {
-    print '<li class="grow"><a href="locations.php">Locations</a></li>';
-} 
-?> 
-
-<?php 
-if(basename($_SERVER['PHP_SELF'])=="travel.php"){
-    print '<li class="active"><a href="#">Travel &amp; Hotels</a></li>';
-} else {
-    print '<li class="grow"><a href="travel.php">Travel &amp; Hotels</a></li>';
-} 
-?>
-
-<?php 
-if(basename($_SERVER['PHP_SELF'])=="events.php"){
-    print '<li class="active"><a href="#">Events</a></li>';
-} else {
-    print '<li class="grow"><a href="events.php">Events</a></li>';
-} 
-?> 
-
-<?php 
-if(basename($_SERVER['PHP_SELF'])=="sponsors.php"){
-    print '<li class="active"><a href="#">Sponsors</a></li>';
-} else {
-    print '<li class="grow"><a href="sponsors.php">Sponsors</a></li>';
-} 
-?>  
+?>   
 
 <?php 
 if(basename($_SERVER['PHP_SELF'])=="contact.php"){
@@ -81,8 +49,5 @@ if(basename($_SERVER['PHP_SELF'])=="contact.php"){
 } 
 ?> 
 </ul>
-    <form class="navbar-form navbar-right">
-      <input type="text" class="form-control col-md-8" placeholder="Search">
-    </form>
   </div>
 </div>

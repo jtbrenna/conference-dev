@@ -16,5 +16,15 @@
     <?php include 'header.php';?>
     <?php include 'nav.php';?>
 
+    <div class="panel panel-default col-md-10 col-md-offset-1">
+      <div class="panel-body">
+        <h4>Questions can be directed to the conference organizers</h4>
+        <ul>
+          <li>Parker VanValkenburgh (nvanvalk@uvm.edu)</li>
+          <li>Deborah Blom (deborah.blom@uvm.edu)</li>
+        </ul>
+      </div>
+    </div>
+
   </body>
 </html>
