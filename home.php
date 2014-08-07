@@ -16,9 +16,10 @@
     <?php include 'header.php';?>
     <?php include 'nav.php';?>
 
+    <h2 class="col-md-offset-1 header-space">Welcome</h2>
+
     <div class="panel panel-default col-md-10 col-md-offset-1">
       <div class="panel-body">
-        <h2>Welcome</h2>
         <p>Dear Friends and Colleagues,</p>
         <p>Welcome to the website of the 33rd Annual Meeting of the Northeast Conference of Andean Archaeology and Ethnohistory. We are pleased to host the NCAAE to the University of Vermont for the first time, on October 18th and 19th, 2014. If you are interested in attending, please see information in the "registration" tab on this website. Please note that the due date for submitting abstracts for consideration as oral presentations is September 10th, 2014 at 5pm. Registration will remain open until October 1st, 2014. </p>
         <p>We would like to thank the Dean's office of the University of Vermont College of Arts and Sciences and the UVM department of anthropology for their generous support of this event and look forward to seeing you in Burlington in October.</p>

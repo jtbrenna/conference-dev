@@ -16,6 +16,8 @@
     <?php include 'header.php';?>
     <?php include 'nav.php';?>
 
+    <h2 class="col-md-offset-1 header-space">Contact Information</h2>
+
     <div class="panel panel-default col-md-10 col-md-offset-1">
       <div class="panel-body">
         <h4>Questions can be directed to the conference organizers</h4>

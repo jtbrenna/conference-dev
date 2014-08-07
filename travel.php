@@ -16,7 +16,7 @@
     <?php include 'header.php';?>
     <?php include 'nav.php';?>
 
-    <h2 class="col-md-offset-1">Travel &amp; Accomodations</h2>
+    <h2 class="col-md-offset-1 header-space">Travel &amp; Accomodations</h2>
     <div class="panel panel-default col-md-10 col-md-offset-1">
       <div class="panel-body">
 
