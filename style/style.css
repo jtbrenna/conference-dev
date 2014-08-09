@@ -6333,3 +6333,6 @@ table .info a,
 .header-space{
   margin-top: 4%;
 }
+.error{
+  color: #ff0039;
+}

@@ -12,6 +12,8 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <script type="text/javascript" src="js/form-validation.js" ></script>
+
     <script type="text/javascript">
 
               function presenterCheck() {
@@ -37,28 +39,30 @@
         <p>Please fill out the following form in order to register for the conference. As in past years, there is NO registration or conference fee. We would appreciate if ALL persons planning to attend register individually so we can plan accordingly.</p>
         <p>Attendee Registration will remain open until Friday, November 15, 2014. If you’re planning to attend but have not registered already, please do so in order to help us finalize conference organization.</p>
         
-        <form class="form-horizontal">
+        <form class="form-horizontal" name="regForm" onsubmit="return validateForm(this)">
           <fieldset>
             <legend>2014 NCAAE Registration Form</legend>
 
-            <div class="form-group">
-              <label for="select" class="col-lg-2 control-label">Title</label>
+            <div class="form-group" id="selectDiv">
+              <label for="select" class="col-lg-2 control-label">Title <span style="color: red;">*</span></label>
               <div class="col-lg-2">
                 <select class="form-control" id="select">
                   <option>-None-</option>
                   <option>Mr.</option>
                   <option>Mrs.</option>
+                  <option>Ms.</option>
                   <option>Dr.</option>
                   <option>Prof.</option>
                 </select>
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="inputFirstName" class="col-lg-2 control-label">First Name</label>
+            <div class="form-group" id="fNameDiv">
+              <label for="inputFirstName" class="col-lg-2 control-label">First Name <span style="color: red;">*</span></label>
               <div class="col-lg-3">
                 <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
               </div>
+              <div class="error" id="inputFirstNameError"></div>
             </div>
 
             <div class="form-group">
@@ -68,11 +72,12 @@
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="inputLastName" class="col-lg-2 control-label">Last Name</label>
+            <div class="form-group" id="lNameDiv">
+              <label for="inputLastName" class="col-lg-2 control-label">Last Name <span style="color: red;">*</span></label>
               <div class="col-lg-3">
                 <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
               </div>
+              <div class="error" id="inputLastNameError"></div>
             </div>
 
             <div class="form-group">
@@ -94,31 +99,34 @@
             </div>
 
             <div class="form-group">
-              <label for="inputInstitute" class="col-lg-2 control-label">Institutional Affiliation (if applicable)</label>
+              <label for="inputInstitute" class="col-lg-2 control-label">Institutional Affiliation</label>
               <div class="col-lg-3">
                 <input type="text" class="form-control" id="inputInstitute" placeholder="Institutional Affiliation">
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+            <div class="form-group" id="emailDiv">
+              <label for="inputEmail" class="col-lg-2 control-label">Email <span style="color: red;">*</span></label>
               <div class="col-lg-3">
                 <input type="text" class="form-control" id="inputEmail" placeholder="Email">
               </div>
+              <div class="error" id="inputEmailError"></div>
             </div>
 
-            <div class="form-group">
-              <label for="inputEmailConf" class="col-lg-2 control-label">Confirm Email</label>
+            <div class="form-group" id="emailConfDiv">
+              <label for="inputEmailConf" class="col-lg-2 control-label">Confirm Email <span style="color: red;">*</span></label>
               <div class="col-lg-3">
                 <input type="text" class="form-control" id="inputEmailConf" placeholder="Confirm Email">
               </div>
+              <div class="error" id="inputEmailConfError"></div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group" id="commentDiv">
               <label for="textArea" class="col-lg-2 control-label">Comments</label>
               <div class="col-lg-10">
                 <textarea class="form-control" rows="3" id="textComments"></textarea>
               </div>
+              <div class="error" id="textCommentsError"></div>
             </div>
 
             <div id="ifPresenter" style="display:none;">
@@ -126,14 +134,14 @@
               <br>
 
               <div class="form-group">
-                <label for="inputTitle" class="col-lg-2 control-label">Title</label>
+                <label for="inputTitle" class="col-lg-2 control-label">Title <span style="color: red;">*</span></label>
                 <div class="col-lg-3">
                   <input type="text" class="form-control" id="inputTitle" placeholder="Title">
                 </div>
               </div>
 
-              <div class="form-group">
-                <label for="textArea" class="col-lg-2 control-label">Abstract</label>
+              <div class="form-group" id="abstractDiv">
+                <label for="textArea" class="col-lg-2 control-label">Abstract <span style="color: red;">*</span></label>
                 <div class="col-lg-10">
                   <textarea class="form-control" rows="3" id="textAbstract"></textarea>
                 </div>
@@ -160,8 +168,8 @@
 
             <div class="form-group">
               <div class="col-lg-10 col-lg-offset-2">
-                <button class="btn btn-default">Cancel</button>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button class="btn btn-default" id="reset">Reset</button>
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
               </div>
             </div>
 
