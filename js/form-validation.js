@@ -19,6 +19,7 @@ function init() {
  *   inputID+"Error" if it exists; otherwise via an alert().
  */
 function validateForm() {
+   if(document.getElementById('radPresenter').checked){
    return (isNotEmpty("inputFirstName", "fNameDiv", "Please enter your first name")
         && isNotEmpty("inputLastName", "lNameDiv", "Please enter your last name")
         && isNotEmpty("inputEmail", "emailDiv", "Please enter an email address")
@@ -26,8 +27,20 @@ function validateForm() {
         && isValidEmail("inputEmail", "emailDiv", "Please enter a valid email")
         && isLengthMinMax("textComments", "commentDiv" ,"500 word limit", 0, 500)
         && isLengthMinMax("textAbstract", "abstractDiv", "1000 word limit", 0, 1000)
-        //&& isNotEmpty("textAbstract", "abstractDiv", "Please enter an abstract")
+        && verifyEmail("inputEmail", "inputEmailConf", "emailConfDiv", "Email Addresses don't match")
+        && isNotEmpty("inputTitle", "titleDiv", "Please enter a title for your abstract")
+        && isNotEmpty("textAbstract", "abstractDiv", "Please enter an abstract"));
+   } else {
+      return (isNotEmpty("inputFirstName", "fNameDiv", "Please enter your first name")
+        && isNotEmpty("inputLastName", "lNameDiv", "Please enter your last name")
+        && isNotEmpty("inputEmail", "emailDiv", "Please enter an email address")
+        && isNotEmpty("inputEmailConf", "emailConfDiv", "Please confirm your email address")
+        && isValidEmail("inputEmail", "emailDiv", "Please enter a valid email")
+        && isLengthMinMax("textComments", "commentDiv" ,"500 word limit", 0, 500)
+        && isLengthMinMax("textAbstract", "abstractDiv", "1000 word limit", 0, 1000)
         && verifyEmail("inputEmail", "inputEmailConf", "emailConfDiv", "Email Addresses don't match"));
+   }
+
 }
  
 // Return true if the input value is not empty
@@ -57,8 +70,6 @@ function showMessage(isValid, inputElement, divElement, errorMsg, errorElement) 
       if (inputElement !== null && divElement.className !== "form-group has-error") {
          divElement.className = "form-group has-error";
          inputElement.focus();
-      } else {
-         divElement.className = "form-group";
       }
    } else {
       // Reset to normal display
@@ -66,39 +77,9 @@ function showMessage(isValid, inputElement, divElement, errorMsg, errorElement) 
          errorElement.innerHTML = "";
       }
       if (inputElement !== null) {
-         inputElement.className = "";
+         divElement.className = "form-group";
       }
    }
-}
- 
-// Return true if the input value contains only digits (at least one)
-function isNumeric(inputId, errorMsg) {
-   var inputElement = document.getElementById(inputId);
-   var errorElement = document.getElementById(inputId + "Error");
-   var inputValue = inputElement.value.trim();
-   var isValid = (inputValue.search(/^[0-9]+$/) !== -1);
-   showMessage(isValid, inputElement, errorMsg, errorElement);
-   return isValid;
-}
- 
-// Return true if the input value contains only letters (at least one)
-function isAlphabetic(inputId, errorMsg) {
-   var inputElement = document.getElementById(inputId);
-   var errorElement = document.getElementById(inputId + "Error");
-   var inputValue = inputElement.value.trim();
-   var isValid = inputValue.match(/^[a-zA-Z]+$/);
-   showMessage(isValid, inputElement, errorMsg, errorElement);
-   return isValid;
-}
- 
-// Return true if the input value contains only digits and letters (at least one)
-function isAlphanumeric(inputId, errorMsg) {
-   var inputElement = document.getElementById(inputId);
-   var errorElement = document.getElementById(inputId + "Error");
-   var inputValue = inputElement.value.trim();
-   var isValid = inputValue.match(/^[0-9a-zA-Z]+$/);
-   showMessage(isValid, inputElement, errorMsg, errorElement);
-   return isValid;
 }
  
 // Return true if the input length is between minLength and maxLength
@@ -119,9 +100,7 @@ function isValidEmail(inputId, divID, errorMsg) {
    var divElement = document.getElementById(divID);
    var errorElement = document.getElementById(inputId + "Error");
    var inputValue = inputElement.value;
-   var atPos = inputValue.indexOf("@");
-   var dotPos = inputValue.lastIndexOf(".");
-   var isValid = (atPos > 0) && (dotPos > atPos + 1) && (inputValue.length > dotPos + 2);
+   var isValid = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,4}$/.test(inputValue);
    showMessage(isValid, inputElement, divElement, errorMsg, errorElement);
    return isValid;
 }

@@ -6,7 +6,7 @@
     <meta name="dcterms.created" content="">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>Template</title>
+    <title>33rd Annual Northeast Conference on Andean Archaeology and Ethnohistory</title>
 
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -48,5 +48,6 @@
       </div>
     </div>
 
+    <?php include 'footer.php';?>
   </body>
 </html>

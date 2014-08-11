@@ -4083,7 +4083,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #8BAE35;
+  background-color: #598A5E;
   border-color: #2F5C39;
   border-radius: 5px;
 }
@@ -6335,4 +6335,9 @@ table .info a,
 }
 .error{
   color: #ff0039;
+  margin-top: 1%;
+}
+.logo{
+  position:relative;
+  top:-47%;
 }

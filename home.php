@@ -6,7 +6,7 @@
     <meta name="dcterms.created" content="">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>Template</title>
+    <title>33rd Annual Northeast Conference on Andean Archaeology and Ethnohistory</title>
 
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -24,7 +24,7 @@
         <p>Welcome to the website of the 33rd Annual Meeting of the Northeast Conference of Andean Archaeology and Ethnohistory. We are pleased to host the NCAAE to the University of Vermont for the first time, on October 18th and 19th, 2014. If you are interested in attending, please see information in the "registration" tab on this website. Please note that the due date for submitting abstracts for consideration as oral presentations is September 10th, 2014 at 5pm. Registration will remain open until October 1st, 2014. </p>
         <p>We would like to thank the Dean's office of the University of Vermont College of Arts and Sciences and the UVM department of anthropology for their generous support of this event and look forward to seeing you in Burlington in October.</p>
         <p>Sincerely,</p>
-        <p>Parker VanValkenburgh and Deborah Blom</p>
+        <p><i>Parker VanValkenburgh and Deborah Blom</i></p>
 
         <h3>Events</h3>
         <ol>
@@ -37,5 +37,6 @@
       </div>
     </div>
 
+    <?php include 'footer.php';?>
   </body>
 </html>
