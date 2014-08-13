@@ -25,8 +25,8 @@ function validateForm() {
         && isNotEmpty("inputEmail", "emailDiv", "Please enter an email address")
         && isNotEmpty("inputEmailConf", "emailConfDiv", "Please confirm your email address")
         && isValidEmail("inputEmail", "emailDiv", "Please enter a valid email")
-        && isLengthMinMax("textComments", "commentDiv" ,"500 word limit", 0, 500)
-        && isLengthMinMax("textAbstract", "abstractDiv", "1000 word limit", 0, 1000)
+        && isLengthMinMax("textComments", "commentDiv" ,"500 word limit", 0, 506)
+        && isLengthMinMax("textAbstract", "abstractDiv", "1000 word limit", 0, 1006)
         && verifyEmail("inputEmail", "inputEmailConf", "emailConfDiv", "Email Addresses don't match")
         && isNotEmpty("inputTitle", "titleDiv", "Please enter a title for your abstract")
         && isNotEmpty("textAbstract", "abstractDiv", "Please enter an abstract"));
@@ -81,14 +81,23 @@ function showMessage(isValid, inputElement, divElement, errorMsg, errorElement) 
       }
    }
 }
- 
+
+//Count the number of words in a string
+function WordCount(str) { 
+
+   return str.split(" ").length;
+
+} 
+
+
 // Return true if the input length is between minLength and maxLength
 function isLengthMinMax(inputId, divId, errorMsg, minLength, maxLength) {
    var inputElement = document.getElementById(inputId);
    var divElement = document.getElementById(divId);
    var errorElement = document.getElementById(inputId + "Error");
-   var inputValue = inputElement.value.trim();
-   var isValid = (inputValue.length >= minLength) && (inputValue.length <= maxLength);
+   var inputValue = WordCount(inputElement.value.trim());
+   alert(inputValue);
+   var isValid = (inputValue >= minLength && inputValue <= maxLength);
    showMessage(isValid, inputElement, divElement, errorMsg, errorElement);
    return isValid;
 }

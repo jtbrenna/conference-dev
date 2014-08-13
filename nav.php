@@ -13,7 +13,7 @@
 if(basename($_SERVER['PHP_SELF'])=="home.php"){
     print '<li class="active"><a href="#">Home</a></li>';
 } else {
-    print '<li class="grow"><a href="home.php">Home</a></li>';
+    print '<li class="outline-outward"><a href="home.php">Home</a></li>';
 } 
 ?>
 
@@ -21,7 +21,7 @@ if(basename($_SERVER['PHP_SELF'])=="home.php"){
 if(basename($_SERVER['PHP_SELF'])=="travel.php"){
     print '<li class="active"><a href="#">Travel &amp; Accomodations</a></li>';
 } else {
-    print '<li class="grow"><a href="travel.php">Travel &amp; Accomodations</a></li>';
+    print '<li class="outline-outward"><a href="travel.php">Travel &amp; Accomodations</a></li>';
 } 
 ?>
 
@@ -29,7 +29,7 @@ if(basename($_SERVER['PHP_SELF'])=="travel.php"){
 if(basename($_SERVER['PHP_SELF'])=="registration.php"){
     print '<li class="active"><a href="#">Registration</a></li>';
 } else {
-    print '<li class="grow"><a href="registration.php">Registration</a></li>';
+    print '<li class="outline-outward"><a href="registration.php">Registration</a></li>';
 } 
 ?>
 
@@ -37,7 +37,7 @@ if(basename($_SERVER['PHP_SELF'])=="registration.php"){
 if(basename($_SERVER['PHP_SELF'])=="program.php"){
     print '<li class="active"><a href="#">Program</a></li>';
 } else {
-    print '<li class="grow"><a href="program.php">Program</a></li>';
+    print '<li class="outline-outward"><a href="program.php">Program</a></li>';
 } 
 ?>   
 
@@ -45,7 +45,7 @@ if(basename($_SERVER['PHP_SELF'])=="program.php"){
 if(basename($_SERVER['PHP_SELF'])=="contact.php"){
     print '<li class="active"><a href="#">Contact Us</a></li>';
 } else {
-    print '<li class="grow"><a href="contact.php">Contact Us</a></li>';
+    print '<li class="outline-outward"><a href="contact.php">Contact Us</a></li>';
 } 
 ?> 
 </ul>

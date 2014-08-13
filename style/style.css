@@ -2812,8 +2812,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #1967be;
-  border-color: #1862b5;
+  background-color: #2f5c39;
+  border-color: #2f5c39;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -6312,20 +6312,32 @@ table .info a,
   color: #333333;
 }
 
-/* Grow */
-.grow {
+/* Outline Outward */
+.outline-outward {
   display: inline-block;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
+  position: relative;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-.grow:hover, .grow:focus, .grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+.outline-outward:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+}
+.outline-outward:hover:before, .outline-outward:focus:before, .outline-outward:active:before {
+  border: #2f5c39 solid 4px;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
 }
 .map {
   float:right;
@@ -6339,5 +6351,8 @@ table .info a,
 }
 .logo{
   position:relative;
-  top:-47%;
+  top:-50%;
+}
+.centered{
+  padding-left: 35.3333%;
 }
