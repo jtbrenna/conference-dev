@@ -16,7 +16,7 @@
     <?php include 'header.php';?>
     <?php include 'nav.php';?>
 
-    <h2 class="col-md-offset-1 header-space">Travel &amp; Accomodations</h2>
+    <h2 class="col-md-offset-1 header-space">Travel &amp; Accommodations</h2>
     <div class="panel panel-default col-md-10 col-md-offset-1">
       <div class="panel-body">
 
@@ -49,7 +49,7 @@
         <p>Montreal (2.5 hrs, 4x daily)<br>
           Boston (4hrs-plus, 4x daily)<br>
         </p>  
-        <p>Other options are available, but are slower and often more expensive than Megabus</p> 
+        <p>Other options are available, but are slower and often more expensive than Megabus.</p> 
 
         <h3><u>How to Get into Town from Burlington International Airport</u>:</h3>
         <p>Bus connections are available from the airport to downtown Burlington and most central locations. See Google Maps for bus times and schedules. Alternatively, taxis are available just outside the aiport and average $10 to UVM and $15 to downtown.</p>

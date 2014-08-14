@@ -96,7 +96,6 @@ function isLengthMinMax(inputId, divId, errorMsg, minLength, maxLength) {
    var divElement = document.getElementById(divId);
    var errorElement = document.getElementById(inputId + "Error");
    var inputValue = WordCount(inputElement.value.trim());
-   alert(inputValue);
    var isValid = (inputValue >= minLength && inputValue <= maxLength);
    showMessage(isValid, inputElement, divElement, errorMsg, errorElement);
    return isValid;

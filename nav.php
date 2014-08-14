@@ -21,7 +21,7 @@ if(basename($_SERVER['PHP_SELF'])=="home.php"){
 if(basename($_SERVER['PHP_SELF'])=="travel.php"){
     print '<li class="active"><a href="#">Travel &amp; Accomodations</a></li>';
 } else {
-    print '<li class="outline-outward"><a href="travel.php">Travel &amp; Accomodations</a></li>';
+    print '<li class="outline-outward"><a href="travel.php">Travel &amp; Accommodations</a></li>';
 } 
 ?>
 

@@ -101,6 +101,14 @@ if (isset($_POST["submit"])){
         /* this line actually sends the email */ 
         mail($to, $subject, $mailMessage, $headers);
 
+
+        if($type == 'Attendee'){
+          header("Location: formConfirmation.php");
+        } else {
+          header("Location: abstractConfirmation.php");
+        }
+        
+
 }
 ?>
 <!DOCTYPE html>
