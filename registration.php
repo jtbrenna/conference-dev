@@ -40,8 +40,8 @@ if (isset($_POST["submit"])){
   }
    
 
-        //now i can mail it
-        $to = 'jtbrenna@uvm.edu';
+        //Where the mail is going
+        $to = 'nvanvalk@uvm.edu';
 
         // just sets these variable to the current date and time
         $todaysDate=strftime("%x");

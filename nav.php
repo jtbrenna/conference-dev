@@ -5,7 +5,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="home.php"><img class="logo" src="uvm-logo.png"></a>
+    <a class="navbar-brand" href="http://www.uvm.edu/"><img src="images/uvm-logo.png" alt="University of Vermont"></a>
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
 	<ul class="nav navbar-nav">
@@ -19,7 +19,7 @@ if(basename($_SERVER['PHP_SELF'])=="home.php"){
 
 <?php 
 if(basename($_SERVER['PHP_SELF'])=="travel.php"){
-    print '<li class="active"><a href="#">Travel &amp; Accomodations</a></li>';
+    print '<li class="active"><a href="#">Travel &amp; Accommodations</a></li>';
 } else {
     print '<li class="outline-outward"><a href="travel.php">Travel &amp; Accommodations</a></li>';
 } 

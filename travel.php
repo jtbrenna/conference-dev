@@ -30,24 +30,24 @@
         <h3><u>Driving</u>:</h3>
         <h4>(approximate times)</h4>
         <p>
-          1.5hrs from Montreal<br>
-          3hrs from Boston<br>
-          5hrs from New York City<br>
+          1.5 hrs from Montreal<br>
+          3 hrs from Boston<br>
+          5 hrs from New York City<br>
           Parking available at conference venue; contact hosts for information.
         </p> 
 
         <h3><u>Bus:</u></h3>
         <h4>Megabus –</h4>
         <p>  
-          Boston (3.5hrs, twice daily)<br>
-          New York City (6hrs, twice daily)<br>
-          Amherst, MA (3.5hrs, twice daily)<br>
-          Hartford (4.5hrs, twice daily)<br>
-          Saratoga Springs, NY (2.5hrs, once daily)
+          Boston (3.5 hrs, twice daily)<br>
+          New York City (6 hrs, twice daily)<br>
+          Amherst, MA (3.5 hrs, twice daily)<br>
+          Hartford (4.5 hrs, twice daily)<br>
+          Saratoga Springs, NY (2.5 hrs, once daily)
         </p> 
         <h4>Greyhound -</h4>
         <p>Montreal (2.5 hrs, 4x daily)<br>
-          Boston (4hrs-plus, 4x daily)<br>
+          Boston (4 hrs-plus, 4x daily)<br>
         </p>  
         <p>Other options are available, but are slower and often more expensive than Megabus.</p> 
 
@@ -59,7 +59,7 @@
       
         <ol>
           <li>
-            Courtyard Burlington Harbor (15-minute walk to conference venue)
+            <a href="http://www.marriott.com/hotels/travel/btvdt-courtyard-burlington-harbor/">Courtyard Burlington Harbor</a> (15-minute walk to conference venue)
             <ul>
               <li>Standard King or Queen $229 / Lake View King $259, plus tax</li>
               <li>Make Reservations before September 17th</li>
@@ -70,7 +70,7 @@
           </li>
           <br>
           <li>
-            Green Mountain Suites (30 minute walk to Conference Venue)
+            <a href="http://www.greenmountainsuites.com/">Green Mountain Suites</a> (30 minute walk to Conference Venue)
             <ul>
               <li>One-bedroom suite with king bed and sleeper sofa or two queen beds, $129/night, plus tax</li>
               <li>Address: 401 Dorset St, South Burlington, VT 05403</li>
@@ -81,7 +81,7 @@
           </li>
           <br>
           <li>
-            Lang House Bed and Breakfast  (5-minute walk to conference venue)
+            <a href="http://www.langhouse.com/">Lang House Bed and Breakfast</a>  (5-minute walk to conference venue)
             <ul>
               <li>Block reservation no longer available, but contact for room availability</li>
               <li>Queen or King - $159 to $249 per room, plus tax</li>

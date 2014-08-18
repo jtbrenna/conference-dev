@@ -2056,8 +2056,8 @@ th {
   text-align: left;
 }
 .table {
-  width: 100%;
-  max-width: 100%;
+  /*width: 100%;
+  max-width: 100%;*/
   margin-bottom: 21px;
 }
 .table > thead > tr > th,
@@ -2066,10 +2066,9 @@ th {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  padding: 8px;
+  padding: 5px 50px 5px 5px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
@@ -3869,7 +3868,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 14.5px 15px;
+  padding: 0px 15px;
   font-size: 19px;
   line-height: 21px;
   height: 50px;
@@ -6349,10 +6348,6 @@ table .info a,
 .error{
   color: #ff0039;
   margin-top: 1%;
-}
-.logo{
-  position:relative;
-  top:-50%;
 }
 .centered{
   display: table;
