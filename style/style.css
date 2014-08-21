@@ -6356,13 +6356,13 @@ table .info a,
   margin-right: auto;
 }
 .header-title{
-  font-family: "Adobe Garamond Pro";
-  font-size: xx-large;
+  font-family: "Calibri";
+  font-size: x-large;
   position: absolute;
-  top:2%;
-  left:20%;
-  background-color:rgba(50,100,50,0.5);
-  padding: 10px;
+  top:5%;
+  left:34%;
+  background-color: #598A5E;
+  padding: 10px 5px 10px 5px;
   border: 5px outset grey;
   color: whitesmoke;
 }
