@@ -10,10 +10,10 @@
   <div class="navbar-collapse collapse navbar-responsive-collapse">
 	<ul class="nav navbar-nav">
 <?php 
-if(basename($_SERVER['PHP_SELF'])=="home.php"){
+if(basename($_SERVER['PHP_SELF'])=="index.php"){
     print '<li class="active"><a href="#">Home</a></li>';
 } else {
-    print '<li class="outline-outward"><a href="home.php">Home</a></li>';
+    print '<li class="outline-outward"><a href="index.php">Home</a></li>';
 } 
 ?>
 

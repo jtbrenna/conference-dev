@@ -1094,7 +1094,7 @@ h6,
   font-size: 13px;
 }
 p {
-  margin: 0 0 10.5px;
+  margin: 0 0 0px;
 }
 .lead {
   margin-bottom: 21px;
@@ -6356,19 +6356,14 @@ table .info a,
   margin-right: auto;
 }
 .header-title{
-  font-family: "Calibri";
+  font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
   font-size: x-large;
-  position: absolute;
-  top:5%;
-  left:34%;
+  text-align: center;
   background-color: #598A5E;
-  padding: 10px 5px 10px 5px;
-  border: 5px outset grey;
+  padding: 1.2% .75% 1.2% .75%;
+  border-right: 4px solid white;
+  border-left: 4px solid white;
   color: whitesmoke;
-}
-.textile{
-  margin-left: -10%;
-  padding-bottom: 30px;
 }
 body, html {
   background-color: #CCEDD3;
@@ -6378,6 +6373,44 @@ body, html {
 }
 .williams{
   margin-bottom: 10px;
-  margin-left: 9%;
   border: 2px solid #2f5c39;
+}
+.header-1{
+  font-size: large;
+  margin-top: 1%;
+}
+.header-2{
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.header-3{
+  font-size: large;
+  /*margin-bottom: -1%;*/
+}
+.header-4{
+  font-size: large;
+  margin-bottom: -1%;
+}
+header{
+  margin-bottom: 2.5%;
+}
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+}
+.flex-container img{
+  flex-grow: 1;
+}
+.flex-container div.header-title{
+  flex-grow: 2;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+  .flex-container img{
+    display: none;
+  }
 }
