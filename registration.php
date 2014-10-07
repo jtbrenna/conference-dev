@@ -150,10 +150,9 @@ if (isset($_POST["submit"])){
     <div class="panel panel-default col-md-10 col-md-offset-1">
       <div class="panel-body">
 
-        <p>Please fill out the following form in order to register for the conference. As in past years, there is NO registration or conference fee. We would appreciate if ALL persons planning to attend register individually so we can plan accordingly.</p>
-        <p>Attendee Registration will remain open until Friday, November 15, 2014. If you’re planning to attend but have not registered already, please do so in order to help us finalize conference organization.</p>
+        <h4>Registration for this event is now closed. If you have any questions please email Parker VanValkenburgh at <a href="mailto:nvanvalk@uvm.edu"> nvanvalk@uvm.edu</a>.</h4>
         
-        <form class="form-horizontal" name="regForm" method="post" onsubmit="return validateForm(this)">
+        <!--<form class="form-horizontal" name="regForm" method="post" onsubmit="return validateForm(this)">
           <fieldset>
             <legend>2014 NCAAE Registration Form</legend>
 
@@ -289,7 +288,7 @@ if (isset($_POST["submit"])){
             </div>
 
           </fieldset>
-        </form>
+        </form>-->
 
       </div>
     </div>
